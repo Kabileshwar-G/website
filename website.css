@@ -1,0 +1,470 @@
+html,
+body {
+  display: grid;
+}
+
+#logo {
+  position: relative;
+  left: -150px;
+  width: 70px;
+
+}
+
+#name {
+  position: relative;
+  left: -950px;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: larger;
+}
+
+#navbar {
+  background-color: black;
+  width: 100%;
+}
+
+.nav-link {
+  color: #ffd700;
+  padding: 6px 12px;
+}
+
+#logo-yatch {
+  position: relative;
+  width: 70px;
+  left: -40px;
+  top: -5px;
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  height: 500px;
+  margin-top: 110px;
+}
+
+.carousel-caption {
+  color: #ffd700;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#cap {
+  position: relative;
+  top: -100px;
+  font-size: 100px;
+  text-shadow: 0 0 5px #ffd700;
+}
+
+#ca {
+  position: relative;
+  top: -70px;
+  font-size: 25px;
+  text-shadow: 0 0 8px #ffd700;
+
+
+}
+
+.box {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 2px solid goldenrod;
+}
+
+.revel {
+  transform: translateX(-100%);
+  animation: animate 1s ease forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.intro {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  position: relative;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding: 6px 30px;
+}
+
+.hd {
+  display: inline-block;
+}
+
+.te {
+  letter-spacing: 10px;
+  color: #ffd700;
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  border-right: 4px solid #ffd700;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 2s steps(21),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 500px;
+  height: 200px;
+  perspective: 1000px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 300px;
+  margin-left: 60%;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flip-box-front {
+  background-color: #ffd700;
+  color: black;
+
+}
+
+.flip-box-back {
+  background-color: #ffd700;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+#q {
+  font-size: 40px;
+}
+
+#a {
+  font-size: 20px;
+}
+
+
+.flip-box-2 {
+  background-color: transparent;
+  width: 500px;
+  height: 200px;
+  perspective: 1000px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: -400px;
+
+}
+
+.flip-box-inner-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-2:hover .flip-box-inner-2 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-2,
+.flip-box-back-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flip-box-front-2 {
+  background-color: #ffd700;
+  color: black;
+
+}
+
+.flip-box-back-2 {
+  background-color: #ffd700;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.la {
+  background-color: black;
+  width: 10%;
+  height: 180px;
+  margin-left: 508px;
+  margin-top: -100px;
+  border-top: dashed 5px #ffd700;
+  border-right: dashed 5px #ffd700;
+  border-top-right-radius: 15px;
+}
+
+.sma {
+  background-color: black;
+  width: 10%;
+  height: 125px;
+  margin-left: 633px;
+  margin-top: -104.5px;
+  transform: rotate(180deg);
+  border-right: dashed 5px #ffd700;
+  border-top: dashed 5px #ffd700;
+  border-top-right-radius: 15px;
+}
+
+
+.card {
+  width: 300px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  border: black;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pack{
+  background-color: #ffd700;
+}
+.card-body{
+  background-color: black;
+  color: #ffd700;
+}
+
+
+
+.testimonial-card {
+  background-color: #ffd700;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+#per .carousel-control-prev, #per .carousel-control-next {
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+#per .carousel-control-prev-icon, #per .carousel-control-next-icon {
+  color: white;
+}
+.testi{
+  background-color: black;
+  height: 380px;
+  justify-content: center;
+  align-items: center;
+}
+#monial{
+  margin-top: 30px;
+  color: #ffd700;
+  font-size: 60px;
+  margin-left: -500px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+#mar{
+  margin-top: 50px;
+}
+a{
+  text-decoration: none;
+}
+
+.button-container {
+  position: relative;
+}
+
+.neon-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 25px;
+  transition: color 0.4s, box-shadow 0.4s;
+  box-shadow: 0 0 2px #ff00ff, 0 0 4px #ff00ff, 0 0 6px #ff00ff, 0 0 8px #ff00ff;
+}
+
+.neon-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(0, 255, 255, 0.5), transparent);
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.neon-button:hover:before {
+  left: 100%;
+}
+
+.neon-button:after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(0, 255, 255, 0.1);
+  transition: all 0.6s ease;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.neon-button:hover {
+  color: #000;
+  box-shadow: 0 0 4px #ff00ff, 0 0 8px #ff00ff, 0 0 12px #ff00ff, 0 0 16px #ff00ff;
+}
+.neon-button:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+
+footer {
+  position: relative;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.wave-container {
+  position: absolute;
+  top: -20px; /* Adjust based on your image height */
+  width: 100%;
+  overflow: hidden; /* Hide overflow */
+  line-height: 0;
+}
+
+#fp{
+  font-family: "playwrite HR", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 50px;
+  color: #000;
+}
+
+.wave {
+  position: relative;
+  display: block;
+  width: 400%; /* Double the width to allow for infinite scrolling */
+  height: 150px; /* Adjust based on your image height */
+  background: url(wave.svg) repeat-x;
+  background-size: contain; /* Ensure the wave image fits correctly */
+  animation: wave-animation 10s infinite linear; /* Animation */
+}
+
+.footer-content {
+  position: relative;
+  top: 150px;
+  background-color: #000;
+  height: 350px;
+  z-index: 1;
+}
+
+/* Animation keyframes */
+@keyframes wave-animation {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+#wq{
+  position: absolute;
+  left: 920px;
+  top:  0px;
+}
+#k{
+  width: 150px;
+}
